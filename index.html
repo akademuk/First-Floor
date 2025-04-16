@@ -26,7 +26,21 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#what-we-do" class="nav__link">What we do</a>
+          <a href="#what-we-do" class="nav__link nav__lin-active">What we do</a>
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="/">Flooring</a>
+            </li>
+            <li>
+              <a href="/">Wall cladding</a>
+            </li>
+            <li>
+              <a href="/">Dry lining</a>
+            </li>
+            <li>
+              <a href="/">Ceilings</a>
+            </li>
+          </ul> -->
         </li>
         <li class="nav__item">
           <a href="#our-works" class="nav__link">Our works</a>
@@ -331,20 +345,13 @@
         <div class="recent-works__item recent-works__bigs">
           <div class="recent-works__image">
             <div class="recent-works__card-image">
-              <picture>
-                <source srcset="
-                      image/our-recent-works-image1.webp 1x,
-                     
-                    " type="image/webp" />
-                <source srcset="
-                      image/our-recent-works-image1.png 1x,
-                      our-recent-works-image1@2x.png    2x
-                    " type="image/png" />
-                <img src="image/our-recent-works-image1.png" alt="Certified Hygiene Standards" />
-              </picture>
+              <video class="video-slide" poster="image/our-recent-works-image1.png" preload="none">
+                <source src="image/02.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+              </video>
             </div>
             <button class="recent-works__video-btn">
-              <img src="image/play-icon.svg" alt="play icons" />
+              <img src="image/play-icon.svg" alt="play icons" class="play-button" />
             </button>
           </div>
           <div class="recent-works__details">
@@ -726,20 +733,13 @@
 
         <div class="how-we-work__media">
           <div class="how-we-work__image">
-            <picture class="why-choose-us__card-image">
-              <source srcset="
-                    image/how-we-work-image.webp 1x,
-                   
-                  " type="image/webp" />
-              <source srcset="
-                    image/how-we-work-image.png 1x,
-                    how-we-work-image@2x.png    2x
-                  " type="image/png" />
-              <img src="image/how-we-work-image.png" alt="Certified Hygiene Standards" />
-            </picture>
+            <video class="video-slide" poster="image/how-we-work-image.png" preload="none">
+              <source src="image/02.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
           <button class="how-we-work__video-btn">
-            <img src="image/play-icon.svg" alt="icon" />
+            <img src="image/play-icon.svg" alt="icon" class="play-button"/>
           </button>
         </div>
       </div>
@@ -802,15 +802,14 @@
         <h2 class="subtitle">/ABOUT OUR COMPANY</h2>
         <div class="about-company__video">
           <div class="about-company__image">
-            <picture>
-              <source srcset="image/about-company.webp 1x" type="image/webp" />
-              <source srcset="image/about-company.jpg 1x, about-company@2x.jpg 2x" type="image/jpeg" />
-              <img src="image/about-company.jpg" alt="Certified Hygiene Standards" />
-            </picture>
+            <video class="video-slide" poster="image/about-company.jpg" preload="none">
+              <source src="image/02.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
 
           <button class="about-company__video-btn">
-            <img src="image/play-icon.svg" alt="play icon" />
+            <img src="image/play-icon.svg" alt="play icon" class="play-button" />
           </button>
         </div>
       </div>
@@ -1123,20 +1122,70 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <a href="/" class="footer__logo-link">
+            <img src="image/logo-footer.svg" alt="First Floor Logo" class="footer__logo-image" />
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item">
+              <a href="#what-we-do" class="footer__nav__link">What we do</a>
+            </li>
+            <li class="footer__nav__item">
+              <a href="#our-works" class="footer__nav__link">Our works</a>
+            </li>
+            <li class="footer__nav__item">
+              <a href="#about-us" class="footer__nav__link">About us</a>
+            </li>
+            <li class="footer__nav__item"><a href="#faq" class="footer__nav__link">FAQ</a></li>
+            <li class="footer__nav__item">
+              <a href="#contact-us" class="footer__nav__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__top-contact">
+            <a href="tel:0999999999">099 999 99 99</a>
+            <a href="/">
+              <img src="image/instagram.svg" alt="icon">
+            </a>
+        </div>
+        <a href="mailto:email@example.com" class="footer__email-link">Email us
+          <span><img src="image/email-icon.svg" alt="email icon" /></span>
+        </a>
+      </div>
+      <div class="footer__bottom">
+          <p>© 2012 - 2025 1st Floor Construction by Validus Media • All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
   <!-- Burger Menu -->
   <div class="overlay"></div>
-  <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">About Us</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">Our Services</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">Contacts</a></li>
-          </ul>
-      </nav>
-
-      <div class="mobile-menu-link">
-          <a href="#" class="mobile-menu--contact">Contact us</a>
+    <div class="mobile-menu">
+      <div class="header__burger active">
+        <div class="header__burger-lines"></div>
       </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#what-we-do" class="nav__link">What we do</a>
+          </li>
+          <li class="nav__item">
+            <a href="#our-works" class="nav__link">Our works</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about-us" class="nav__link">About us</a>
+          </li>
+          <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+          <li class="nav__item">
+            <a href="#contact-us" class="nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
   </div>
 
   <script src="script/jquery-3.7.0.min.js"></script>

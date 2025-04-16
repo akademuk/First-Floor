@@ -49,7 +49,7 @@ function initFaqAccordion() {
 }
 
 function initBurgerMenu() {
-  const burger = document.querySelector(".header__burger");
+  const burgers = document.querySelectorAll(".header__burger"); 
   const menu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".overlay");
   const body = document.body;
@@ -59,7 +59,7 @@ function initBurgerMenu() {
   const openMenu = () => {
     const scrollY = window.scrollY;
     body.dataset.scrollY = scrollY;
-    burger.classList.add("active");
+    burgers.forEach(burger => burger.classList.add("active")); 
     menu.classList.add("active");
     overlay.classList.add("active");
 
@@ -70,7 +70,7 @@ function initBurgerMenu() {
   };
 
   const closeMenu = (targetId = null) => {
-    burger.classList.remove("active");
+    burgers.forEach(burger => burger.classList.remove("active")); 
     menu.classList.remove("active");
     overlay.classList.remove("active");
 
@@ -92,8 +92,10 @@ function initBurgerMenu() {
     });
   };
 
-  burger.addEventListener("click", () => {
-    burger.classList.contains("active") ? closeMenu() : openMenu();
+  burgers.forEach(burger => {
+    burger.addEventListener("click", () => {
+      burger.classList.contains("active") ? closeMenu() : openMenu();
+    });
   });
 
   overlay.addEventListener("click", closeMenu);
@@ -106,6 +108,7 @@ function initBurgerMenu() {
   });
 }
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".clients-swiper", {
     loop: true,
@@ -116,3 +119,20 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const playButtons = document.querySelectorAll('.play-button');
+
+  playButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          const videoBlock = button.closest('.about-company__video');
+          const video = videoBlock.querySelector('video');
+          
+          video.controls = true;  
+          video.play(); 
+
+          button.style.display = 'none';
+      });
+  });
+});
+
