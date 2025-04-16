@@ -248,7 +248,6 @@
     .nav__lin-active {
         display: flex;
         align-items: center;
-        transition: all 0.4s;
         gap: 5px;
     }
 
@@ -264,26 +263,22 @@
         filter: brightness(0) saturate(100%) invert(99%) sepia(76%) saturate(2%) hue-rotate(106deg) brightness(111%) contrast(100%);
     }
 
+
     .nav__lin-active:hover::after {
         filter: none;
     }
 
-    .nav__lin-active:hover{
-        transition: none;
+
+
+    .nav__lin-active:hover {
+        border-radius: 20px 20px 0 0;
     }
 
-    /* .nav__lin-active:hover {
-        border-radius: 20px 20px 0 0;
-    } */
-
-    .nav__lin-active:hover + .sub-list{
+    .nav__item:hover .sub-list{
         height: auto;
         padding-bottom: 8px;
     }
 
-    .nav__link.nav__lin-active{
-        transition: none;
-    }
 
     .sub-list {
         position: absolute;
@@ -330,20 +325,30 @@
     .sub-list a:hover {
         color: var(--button-color);
     }
-    
 
-    .nav__link {
+    .nav__item {
         padding: 6px 14px;
         border-radius: 20px;
+    }
+    
+    .nav__item:hover {
+        background: var(--primary-color);
+    }
+
+    .nav__link {
         color: var(--primary-color);
         line-height: 21px;
         text-decoration: none;
-        transition: all 0.4s;
     }
 
-    .nav__link:hover {
+    .nav__lin-active:hover {
         background: var(--primary-color);
         color: var(--text-color);
+        border-radius: 20px 20px 0 0;
+    }
+
+    .nav__item:hover .nav__link {
+        color: var(--text-color); 
     }
 
     .header__email-link {
