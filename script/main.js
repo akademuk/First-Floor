@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initProjectsActiveToggle();
   initFaqAccordion();
   initBurgerMenu();
+  initHeroVideo();
 });
 
 function initProjectsActiveToggle() {
@@ -112,10 +113,13 @@ function initBurgerMenu() {
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".clients-swiper", {
     loop: true,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     spaceBetween: 29,
+    speed: 800,  
     autoplay: {
-      delay: 2000,
+      delay: 2000,        
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
   });
 });
@@ -125,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   playButtons.forEach(button => {
       button.addEventListener('click', function() {
-          const videoBlock = button.closest('.about-company__video');
+          const videoBlock = button.closest('.video__container');
           const video = videoBlock.querySelector('video');
           
           video.controls = true;  
@@ -135,4 +139,25 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+function initHeroVideo() {
+  const heroBackground = document.querySelector(".hero__background");
+
+  if (!heroBackground) {
+      return;
+  }
+
+  const heroImage = heroBackground.querySelector(".hero__background-img");
+  const heroVideo = heroBackground.querySelector(".hero__background-video");
+
+  if (!heroImage || !heroVideo) {
+      return;
+  }
+
+  window.addEventListener("load", () => {
+      heroImage.style.opacity = "0";
+      heroVideo.style.opacity = "1";
+  });
+}
 

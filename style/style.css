@@ -90,6 +90,68 @@
         margin: 0 auto;
     }
 
+    .border-button {
+        transition: all 0.4s;
+    }
+
+    .border-button:hover {
+        background: var(--primary-color);
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+    }
+
+    .border-button:hover img {
+        filter: brightness(0) saturate(100%) invert(92%) sepia(12%) saturate(6899%) hue-rotate(328deg) brightness(89%) contrast(84%);
+    }
+
+    .blue-button {
+        transition: all 0.4s;
+    }
+
+    .blue-button:hover {
+        background: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .link-hover{
+        position: relative;
+    }
+
+    .link-hover::before {
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--button-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.4s;
+    }
+
+    .footer__nav__link {
+        position: relative;
+    }
+
+    .footer__nav__link::before {
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.4s;
+    }
+
+    .footer__nav__link:hover:before {
+        width: 100%;
+    }
+
+    
+    .link-hover:hover:before {
+        width: 100%;
+    }
+
     .header {
         position: absolute;
         top: 30px;
@@ -333,6 +395,12 @@
     
     .nav__item:hover {
         background: var(--primary-color);
+    }
+
+    .video__container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .nav__link {
@@ -662,6 +730,11 @@
         width: 100%;
     }
 
+    .recent-works__title a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     .recent-works__bigs .recent-works__image {
         width: 100%;
         height: 377px;
@@ -969,6 +1042,7 @@
         display: flex;
         gap: 20px;
         align-items: stretch;
+        width: calc(100% - 360px);
     }
 
     .how-we-work__steps {
@@ -976,6 +1050,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        min-width: 340px;
     }
 
     .how-we-work__step {
@@ -1024,6 +1099,27 @@
         position: relative;
     }
 
+    .hero__background-img, .hero__background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
+    }
+
+    .hero__background-video {
+        opacity: 0;
+    }
+    
+    .hero__background-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
     .how-we-work__image img {
         width: 100%;
         height: 100%;
@@ -1044,7 +1140,7 @@
 
     .how-we-work__image {
         width: 100%;
-        height: 100%;
+        height: 384px;
     }
 
     .contact-form {
@@ -1126,10 +1222,14 @@
         margin-bottom: 25px;
     }
 
+    .clients-swiper .swiper-wrapper {
+        transition-timing-function: ease-in-out !important;
+      }
+
     .contact-form__input::placeholder {
         color: rgba(26, 26, 26, 0.50);
         font-family: Mulish;
-        font-size: 10px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 14px;
@@ -2005,6 +2105,10 @@
         background: var(--primary-color);
     }
 
+    .about-company__image {
+        height: 100%;
+    }
+
     @media (max-width: 1500px) {
         .pading-all {
             padding: 150px 32px;
@@ -2035,6 +2139,14 @@
     @media (max-width: 1200px) {
         .pading-all {
             padding: 64px 32px;
+        }
+
+        .how-we-work__content {
+            width: 100%;
+        }
+
+        .how-we-work__steps {
+            justify-content: space-between;
         }
 
         .services .wrapper,
@@ -2123,8 +2235,7 @@
         }
 
         .recent-works__details {
-            max-width: 700px;
-            margin: 0 auto;
+            max-width: 100%;
         }
 
         .projects .wrapper {
@@ -2144,7 +2255,7 @@
         }
 
         .how-we-work__media {
-            height: auto;
+            width: 100%;
         }
 
         .recent-works__image {
@@ -2156,9 +2267,6 @@
             height: auto;
         }
 
-        .how-we-work__image {
-            height: 100%;
-        }
 
         .recent-works__cta {
             font-size: 17px;
@@ -2337,13 +2445,9 @@
             flex-direction: column-reverse;
         }
 
-        .how-we-work__media {
-            width: 100%;
-            height: 250px;
-        }
-
         .how-we-work__steps {
             width: 100%;
+            min-width: 100%;
         }
 
         .contact-form {
