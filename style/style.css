@@ -2109,6 +2109,11 @@
         height: 100%;
     }
 
+    .clients-swiper .swiper-slide {
+        width: auto;          
+        flex: 0 0 auto;        
+      }
+
     @media (max-width: 1500px) {
         .pading-all {
             padding: 150px 32px;

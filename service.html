@@ -73,8 +73,10 @@
                     checks and floor preparation
                 </p>
                 <div class="hero__box">
-                    <a href="#request-quote" class="hero__cta-btn hero__cta-btn--request-quote blue-button">Get a free quote</a>
-                    <a href="#request-quote" class="hero__cta-btn hero__cta-btn--services hero__cta-btn--services2 border-button">What we do
+                    <a href="#request-quote" class="hero__cta-btn hero__cta-btn--request-quote blue-button">Get a free
+                        quote</a>
+                    <a href="#request-quote"
+                        class="hero__cta-btn hero__cta-btn--services hero__cta-btn--services2 border-button">What we do
                         <img src="image/arrow-btn.svg" alt="icon">
                     </a>
                 </div>
@@ -94,7 +96,7 @@
             </picture>
 
             <div class="hero__background-video">
-                <video src="image/02.mp4" autoplay muted playsinline loop></video>
+                <video src="image/02.mp4" autoplay muted playsinline webkit-playsinline loop preload="auto"></video>
             </div>
         </div>
     </section>
@@ -105,14 +107,16 @@
                 <h2 class="subtitle">/about service flooring</h2>
                 <div class="about-company__video video__container">
                     <div class="about-company__image">
-                        <video class="video-slide" poster="image/services-about.jpg" preload="none">
+                        <video class="video-slide" poster="image/services-about.jpg" preload="metadata" playsinline
+                        webkit-playsinline x5-playsinline disablepictureinpicture
+                        controlsList="nofullscreen nodownload noremoteplayback">
                             <source src="image/02.mp4" type="video/mp4">
                             Ваш браузер не поддерживает видео.
                         </video>
                     </div>
 
                     <button class="about-company__video-btn">
-                        <img src="image/play-icon.svg" alt="play icon" class="play-button"/>
+                        <img src="image/play-icon.svg" alt="play icon" class="play-button" />
                     </button>
                 </div>
             </div>
@@ -161,205 +165,212 @@
 
     <section class="faq pading-all faq-services">
         <div class="wrapper">
-           <div class="faq__left">
-            <h2 class="subtitle">/What we do</h2>
-            <div class="faq__items">
-                <div class="faq__items-col">
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Safety vinyl flooring
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
+            <div class="faq__left">
+                <h2 class="subtitle">/What we do</h2>
+                <div class="faq__items">
+                    <div class="faq__items-col">
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Safety vinyl flooring
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
                                     image/accardion-bg.webp 1x,
                                     
                                   " type="image/webp" />
-                              <source srcset="
+                                    <source srcset="
                                     image/accardion-bg.jpg 1x,
                                     accardion-bg@2x.jpg    2x
                                   " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Raised access flooring
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
+                                    image/accardion-bg.webp 1x,
+                                    
+                                  " type="image/webp" />
+                                    <source srcset="
+                                    image/accardion-bg.jpg 1x,
+                                    accardion-bg@2x.jpg    2x
+                                  " type="image/jpeg" />
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Carpet and carpet tiles
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
+                                    image/accardion-bg.webp 1x,
+                                    
+                                  " type="image/webp" />
+                                    <source srcset="
+                                    image/accardion-bg.jpg 1x,
+                                    accardion-bg@2x.jpg    2x
+                                  " type="image/jpeg" />
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
+
+
                     </div>
 
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Raised access flooring
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
+                    <div class="faq__items-col">
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Resilient Flooring
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
                                     image/accardion-bg.webp 1x,
                                     
                                   " type="image/webp" />
-                              <source srcset="
+                                    <source srcset="
                                     image/accardion-bg.jpg 1x,
                                     accardion-bg@2x.jpg    2x
                                   " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Luxury vinyl tiles (LVT)
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
+                                    image/accardion-bg.webp 1x,
+                                    
+                                  " type="image/webp" />
+                                    <source srcset="
+                                    image/accardion-bg.jpg 1x,
+                                    accardion-bg@2x.jpg    2x
+                                  " type="image/jpeg" />
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__item-question">
+                                Emergency flooring repairs
+                                <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
+                            </button>
+                            <div class="faq__item-answer">
+                                <div class="services__card-content">
+                                    <p class="services__card-description">
+                                        Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
+                                        mollis tristique platea orci. Quis pulvinar quis nibh purus.
+                                        Suspendisse egestas turpis consectetur urna tortor massa non
+                                        mattis
+                                    </p>
+                                    <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a
+                                        service</a>
+                                </div>
+                            </div>
+                            <div class="services__card-image">
+                                <picture class="why-choose-us__card-image">
+                                    <source srcset="
+                                    image/accardion-bg.webp 1x,
+                                    
+                                  " type="image/webp" />
+                                    <source srcset="
+                                    image/accardion-bg.jpg 1x,
+                                    accardion-bg@2x.jpg    2x
+                                  " type="image/jpeg" />
+                                    <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Carpet and carpet tiles
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
-                                    image/accardion-bg.webp 1x,
-                                    
-                                  " type="image/webp" />
-                              <source srcset="
-                                    image/accardion-bg.jpg 1x,
-                                    accardion-bg@2x.jpg    2x
-                                  " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
-                    </div>
-
-                  
-                </div>
-
-                <div class="faq__items-col">
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Resilient Flooring
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
-                                    image/accardion-bg.webp 1x,
-                                    
-                                  " type="image/webp" />
-                              <source srcset="
-                                    image/accardion-bg.jpg 1x,
-                                    accardion-bg@2x.jpg    2x
-                                  " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
-                    </div>
-
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Luxury vinyl tiles (LVT)
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
-                                    image/accardion-bg.webp 1x,
-                                    
-                                  " type="image/webp" />
-                              <source srcset="
-                                    image/accardion-bg.jpg 1x,
-                                    accardion-bg@2x.jpg    2x
-                                  " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
-                    </div>
-
-                    <div class="faq__item">
-                        <button class="faq__item-question">
-                            Emergency flooring repairs
-                           <span> <img src="image/arrow-accardion.svg" alt="icons" /></span>
-                        </button>
-                        <div class="faq__item-answer">
-                              <div class="services__card-content">
-                                <p class="services__card-description">
-                                  Lorem ipsum dolor sit amet consectetur. Rhoncus diam integer
-                                  mollis tristique platea orci. Quis pulvinar quis nibh purus.
-                                  Suspendisse egestas turpis consectetur urna tortor massa non
-                                  mattis
-                                </p>
-                                <a href="#order-ceilings" class="services__cta-btn services__cta-btn--order">Order a service</a>
-                              </div>
-                        </div>
-                        <div class="services__card-image">
-                            <picture class="why-choose-us__card-image">
-                              <source srcset="
-                                    image/accardion-bg.webp 1x,
-                                    
-                                  " type="image/webp" />
-                              <source srcset="
-                                    image/accardion-bg.jpg 1x,
-                                    accardion-bg@2x.jpg    2x
-                                  " type="image/jpeg" />
-                              <img src="image/accardion-bg.jpg" alt="Certified Hygiene Standards" />
-                            </picture>
-                          </div>
-                    </div>   
                 </div>
             </div>
-           </div>
-           <div class="faq__right">
+            <div class="faq__right">
                 <h3>Lorem ipsum dolor sit amet consectetur vitae feugiat Proin nullam platea vitae</h3>
-                <p>We provide professional flooring solutions for hygiene-critical environments. From moisture testing and floor preparation to full installation — we handle every step with precision</p>
+                <p>We provide professional flooring solutions for hygiene-critical environments. From moisture testing
+                    and floor preparation to full installation — we handle every step with precision</p>
                 <a href="/" class="blue-button">Free consultation</a>
             </div>
         </div>
@@ -773,14 +784,16 @@
                 <h2 class="subtitle">/ABOUT OUR COMPANY</h2>
                 <div class="about-company__video video__container">
                     <div class="about-company__image">
-                        <video class="video-slide" poster="image/about-company.jpg" preload="none">
+                        <video class="video-slide" poster="image/about-company.jpg" preload="metadata" playsinline
+                            webkit-playsinline x5-playsinline disablepictureinpicture
+                            controlsList="nofullscreen nodownload noremoteplayback">
                             <source src="image/02.mp4" type="video/mp4">
                             Ваш браузер не поддерживает видео.
                         </video>
                     </div>
 
                     <button class="about-company__video-btn">
-                        <img src="image/play-icon.svg" alt="play icon" class="play-button"/>
+                        <img src="image/play-icon.svg" alt="play icon" class="play-button" />
                     </button>
                 </div>
             </div>
